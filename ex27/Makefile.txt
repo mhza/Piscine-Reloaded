@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mhaziza <mhaziza@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2016/11/17 11:18:18 by mhaziza           #+#    #+#              #
+#    Updated: 2016/11/17 11:18:20 by mhaziza          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = ft_display_file
+SRCS = ft_display_file.c
+OBJECTS = ft_display_file.o
+
+all :
+	gcc $(SRCS) -o $(NAME)
+
+clean :
+	rm -f $(OBJECTS)
+
+fclean : clean
+	rm -f $(NAME)
